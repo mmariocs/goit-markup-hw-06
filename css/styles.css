@@ -21,7 +21,6 @@ a {
   color: #f4f4fd;
 }
 
-
 /*--------------------------- HEADER ------------------------*/
 
 .header-nav {
@@ -64,7 +63,7 @@ a {
 }
 
 .header-address {
-font-style: normal;
+  font-style: normal;
 }
 
 .header-address-list {
@@ -120,11 +119,11 @@ font-style: normal;
   cursor: pointer;
 }
 .main-title-btn:hover {
-background-color: #404BBF;
+  background-color: #404bbf;
 }
 
 .main-title-btn:focus {
-  background-color: #404BBF;
+  background-color: #404bbf;
 }
 
 /*--------------------------- MAIN-SECTION (1) END ------------------------*/
@@ -159,7 +158,7 @@ background-color: #404BBF;
 
 /*--------------------------- TEAM SECTION (3) ------------------------*/
 .team {
-  background-color: #FFFFFF ;
+  background-color: #ffffff;
 }
 
 .team-title {
@@ -250,5 +249,3 @@ footer {
 }
 
 /*--------------------------- FOOTER END ------------------------*/
-
-
