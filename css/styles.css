@@ -80,11 +80,12 @@ a {
   display: flex;
   gap: 40px;
   margin-left: 76px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .header-list-item {
-  padding-top: 24px;
-  padding-bottom: 24px;
+
 }
 
 .header-list-link {
