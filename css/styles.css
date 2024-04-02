@@ -52,14 +52,10 @@ a {
   align-items: center;
 }
 
-
-
 .header-nav {
   display: flex;
   flex-grow: 1;
 }
-
-
 
 .logo-link {
   font-family: "Raleway", sans-serif;
@@ -78,8 +74,7 @@ a {
 }
 
 .header-list-item {
-
-} 
+}
 
 .header-list-link {
   font-weight: 500;
@@ -102,7 +97,7 @@ a {
 }
 
 .header-address {
-  font-style: normal; 
+  font-style: normal;
 }
 
 .header-address-list {
@@ -190,7 +185,7 @@ a {
 }
 
 .advantages-list-item {
-  width:calc((100% - 3 * 24px) / 4);
+  width: calc((100% - 3 * 24px) / 4);
 }
 
 .advantages-title {
@@ -235,8 +230,8 @@ a {
 }
 
 .team-list-div {
- margin-top: 32px;
- margin-bottom: 32px;
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 
 .team-list-item {
