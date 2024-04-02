@@ -55,8 +55,7 @@ a {
 
 .header-container {
   display: flex;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  align-items: center;
 }
 
 .header-nav {
@@ -83,6 +82,8 @@ a {
 }
 
 .header-list-item {
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 
 .header-list-link {
@@ -112,6 +113,7 @@ a {
 .header-address-list {
   display: flex;
   gap: 40px;
+
 }
 
 .header-address-item {
