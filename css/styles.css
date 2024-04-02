@@ -7,8 +7,8 @@ body {
 .container {
   width: 1158px;
   margin: 0 auto;
-  padding-left: 156px;
-  padding-right: 156px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 h1,
@@ -18,6 +18,11 @@ h4,
 h5,
 h6 {
   margin: 0 auto;
+}
+
+section {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 img {
@@ -45,16 +50,21 @@ a {
 
 /*--------------------------- HEADER ------------------------*/
 
+.header {
+  border-bottom: 1px solid #e7e9fc;
+  padding: 0 15px;
+}
+
 .header-container {
   display: flex;
   padding-top: 24px;
   padding-bottom: 24px;
-  align-items: center;
 }
 
 .header-nav {
   display: flex;
   flex-grow: 1;
+  align-items: center;
 }
 
 .logo-link {
@@ -65,6 +75,7 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  margin-right: 76px;
 }
 
 .header-list {
@@ -134,7 +145,7 @@ a {
 .main-section {
   background-color: #2e2f42;
   height: 600px;
-  padding: 188px 0 0;
+  padding: 188px 0;
 }
 
 .main-title {
@@ -161,6 +172,9 @@ a {
   margin: 0 auto;
   border-radius: 4px;
   padding: 16px 32px;
+  min-width: 169px;
+  height: 56px;
+  border: none;
 }
 .main-title-btn:hover {
   background-color: #404bbf;
@@ -173,10 +187,22 @@ a {
 /*--------------------------- MAIN-SECTION (1) END ------------------------*/
 
 /*--------------------------- ADVANTAGES SECTION (2) ------------------------*/
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .advantages {
   display: flex;
-  padding-top: 120px;
-  padding-bottom: 120px;
 }
 
 .advantages-list {
@@ -209,8 +235,6 @@ a {
 /*--------------------------- TEAM SECTION (3) ------------------------*/
 .team {
   background-color: #f4f4fd;
-  padding-top: 120px;
-  padding-bottom: 120px;
 }
 
 .team-title {
@@ -221,12 +245,12 @@ a {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  margin-bottom: 72px;
 }
 
 .team-list {
   display: flex;
   gap: 24px;
-  margin-top: 72px;
 }
 
 .team-list-div {
@@ -236,6 +260,7 @@ a {
 
 .team-list-item {
   background-color: #ffffff;
+  width:calc((100% - 3 * 24px) / 4);
 }
 
 .team-list-img {
@@ -263,8 +288,6 @@ a {
 
 .portfolio {
   display: flex;
-  padding-top: 120px;
-  padding-bottom: 120px;
 }
 
 .portfolio-title {
@@ -282,9 +305,11 @@ a {
   gap: 24px;
   flex-wrap: wrap;
   margin-top: 72px;
+
 }
 
 .portfolio-list-item {
+
 }
 
 .portfolio-list-img {
