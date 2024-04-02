@@ -83,8 +83,7 @@ a {
 }
 
 .header-list-item {
-  padding-top: 24px;
-  padding-bottom: 24px;
+
 }
 
 .header-list-link {
@@ -93,7 +92,9 @@ a {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
-
+  display: flex;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .header-list-link:hover {
@@ -115,6 +116,7 @@ a {
 .header-address-list {
   display: flex;
   gap: 40px;
+
 }
 
 .header-address-item {
