@@ -190,11 +190,11 @@ a {
 
 .advantages-list {
   display: flex;
-  max-width: 1128px;
   gap: 24px;
 }
 
 .advantages-list-item {
+  width:calc((100% - 3 * 24px) / 4);
 }
 
 .advantages-title {
@@ -213,8 +213,6 @@ a {
   letter-spacing: 0.02em;
 }
 
-.advantages-item-list {
-}
 /*--------------------------- ADVANTAGES SECTION (2) END ------------------------*/
 
 /*--------------------------- TEAM SECTION (3) ------------------------*/
