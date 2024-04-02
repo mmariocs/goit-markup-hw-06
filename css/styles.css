@@ -113,7 +113,6 @@ a {
 .header-address-list {
   display: flex;
   gap: 40px;
-
 }
 
 .header-address-item {
@@ -261,7 +260,7 @@ a {
 
 .team-list-item {
   background-color: #ffffff;
-  width:calc((100% - 3 * 24px) / 4);
+  width: calc((100% - 3 * 24px) / 4);
 }
 
 .team-list-img {
@@ -312,9 +311,9 @@ a {
 
 .portfolio-div {
   border-bottom: 1px solid #e7e9fc;
-border-left: 1px solid #e7e9fc;
-border-right: 1px solid #e7e9fc;
-padding: 32px 16px;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+  padding: 32px 16px;
 }
 
 .portfolio-list-item {
