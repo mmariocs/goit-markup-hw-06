@@ -297,14 +297,19 @@ a {
   text-align: center;
   text-transform: capitalize;
   color: #2e2f42;
+  margin-bottom: 72px;
 }
 
 .portfolio-list {
   display: flex;
   gap: 24px;
   flex-wrap: wrap;
-  margin-top: 72px;
+}
 
+.portfolio-div {
+  border-bottom: 1px solid #e7e9fc;
+border-left: 1px solid #e7e9fc;
+border-right: 1px solid #e7e9fc;
 }
 
 .portfolio-list-item {
