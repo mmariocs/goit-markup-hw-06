@@ -15,7 +15,7 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6, p {
   margin: 0 auto;
 }
 
@@ -78,8 +78,6 @@ a {
 .header-list {
   display: flex;
   gap: 40px;
-  margin-left: 76px;
-
 }
 
 .header-list-item {
@@ -95,6 +93,11 @@ a {
   display: flex;
   padding-top: 24px;
   padding-bottom: 24px;
+  transition: color 200ms ease-in;
+}
+
+.svg-hover {
+  fill: #404bbf;
 }
 
 .header-list-link:hover {
@@ -103,6 +106,10 @@ a {
 
 .header-list-link:active {
   color: #404bbf;
+}
+
+.header-list-link:active::after {
+  background-image: url(../images/icons.svg#icon-hover);
 }
 
 .header-list-link:focus {
@@ -128,6 +135,9 @@ a {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  transition: color 200ms ease-in;
 }
 
 .header-address-link:hover {
@@ -146,7 +156,8 @@ a {
 
 /*--------------------------- MAIN-SECTION (1) ------------------------*/
 .main-section {
-  background-color: #2e2f42;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),  url(../images/head/people-office\ 1.png);
+  background-size: cover;
   height: 600px;
   padding: 188px 0;
 }
@@ -178,6 +189,7 @@ a {
   min-width: 169px;
   height: 56px;
   border: none;
+  transition: background-color 200ms ease-in;
 }
 .main-title-btn:hover {
   background-color: #404bbf;
@@ -205,7 +217,6 @@ a {
 }
 
 .advantages {
-  display: flex;
 }
 
 .advantages-list {
@@ -217,13 +228,17 @@ a {
   width: calc((100% - 3 * 24px) / 4);
 }
 
+.advantages-list-item::before {
+  background-image: url(../images/icons.svg#icon-antenna-1);
+  content: "";
+}
+
 .advantages-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  display: flex;
   margin-bottom: 8px;
 }
 
@@ -257,7 +272,6 @@ a {
 }
 
 .team-list-div {
-  margin-top: 32px;
   padding: 32px 0;
 }
 
@@ -287,12 +301,37 @@ a {
   text-align: center;
 }
 
+.team-soc-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.team-soc-link {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-link-icon {
+  fill: #111;
+  position: absolute;
+}
+
+.team-soc-item {
+  width: 40px;
+  height: 40px;
+}
+
 /*--------------------------- TEAM SECTION (3) END ------------------------*/
 
 /*--------------------------- PORTFOLIO SECTION (4) ------------------------*/
 
 .portfolio {
-  display: flex;
 }
 
 .portfolio-title {
@@ -311,6 +350,7 @@ a {
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
+
 }
 
 .portfolio-div {
@@ -321,6 +361,37 @@ a {
 }
 
 .portfolio-list-item {
+  position: relative;
+  overflow: hidden;
+  
+}
+
+.portfolio-list-item:hover {
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
+.overlay {
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: #f4f4fd;
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ transform: translateY(-100%);
+ transition: transform 250ms ease-in-out;
+ background: #4d5ae5;
+ width: 360px;
+height: 300px;
+padding-top: 40px;
+padding-left: 32px;
+padding-right: 32px;
+}
+
+.portfolio-list-item:hover .overlay {
+  transform: translateY(0%);
 }
 
 .portfolio-list-img {
@@ -332,7 +403,6 @@ a {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  display: flex;
   margin-bottom: 8px;
 }
 
