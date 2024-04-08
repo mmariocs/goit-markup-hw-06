@@ -361,9 +361,15 @@ a {
   height: 40px;
 }
 
-.team-soc-item:hover .team-soc-link,
+/* .team-soc-item:hover .team-soc-link,
 .team-soc-item:active .team-soc-link,
 .team-soc-item:focus .team-soc-link {
+  background-color: #404bbf;
+} */
+
+.team-soc-link:hover,
+.team-soc-link:focus,
+.team-soc-link:active {
   background-color: #404bbf;
 }
 
