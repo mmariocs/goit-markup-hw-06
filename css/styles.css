@@ -528,8 +528,9 @@ a {
 }
 
 .footer-soc-link:hover,
-.footer-soc-link:active,
-.footer-soc-link:focus {
+.footer-soc-link:focus,
+.footer-soc-link:active
+ {
   background-color: #31d0aa;
 }
 
