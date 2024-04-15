@@ -648,6 +648,7 @@ margin-bottom: 8px;
 
 .modal-form-div {
   position: relative;
+  width: 360px;
 }
 
 .form-label {
