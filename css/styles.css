@@ -806,19 +806,8 @@ color: #4d5ae5;
   margin-left: 24px;
 }
 
-.modal-check:checked + .check-text .span-checkbox-text {
-  fill: #f4f4fd;
-  background-color: #404bbf;
-  border: none;
-}
-
-.modal-check:checked + .check-text .span-checkbox-text {
-  background-color: #404bbf;
-  border: none;
-}
-
-.modal-check:checked + .check-text .span-checkbox-text svg {
-  fill: #f4f4fd;
+.modal-field-checkbox {
+  margin-bottom: 24px;
 }
 
 .form-btn {
@@ -844,7 +833,6 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .span-checkbox-text {
-  margin-left: 24px;
   margin-right: 8px;
   width: 16px;
   height: 16px;
@@ -861,6 +849,35 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .form-btn:hover {
   background-color: #404bbf;
+}
+
+.modal-check:checked + .check-text .span-checkbox-text {
+  fill: #f4f4fd;
+  background-color: #404bbf;
+  border: none;
+}
+
+.modal-check:checked + .check-text .span-checkbox-text svg {
+  fill: #f4f4fd;
+}
+
+.modal-check {
+  margin-left: 24px;
+}
+
+.modal-check:checked + .check-text .span-checkbox-text {
+  fill: #f4f4fd;
+  background-color: #404bbf;
+  border: none;
+}
+
+.check-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  white-space: nowrap;
 }
 
 /*--------------------------- BACKDROP END ------------------------*/
